@@ -3,8 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split, GridSearchCV, ShuffleSplit, cross_val_score
 from sklearn.linear_model import LinearRegression, Lasso
+from sklearn.ensemble import RandomForestRegressor
 
-df1 = pd.read_csv(r'D:\Coding journey\Projects\Bangalore Home Prices - Real Estate Price Prediction System\bengaluru_house_prices.csv')
+df1 = pd.read_csv(r'D:\Coding journey\Projects\House Price Prediction - Bangalore dataset\model\bengaluru_house_prices.csv')
 df1.groupby('area_type')['area_type'].agg('count')
 df2 = df1.drop(['area_type','availability','society','balcony'],axis=1)
 df3 = df2.dropna().copy()
@@ -93,7 +94,7 @@ lr = LinearRegression()
 lr.fit(X_train,y_train)
 lr.score(X_test,y_test)
 
-cv = ShuffleSplit(n_splits=5,test_size=0.2,random_state=42)
+cv = ShuffleSplit(n_splits=10,test_size=0.2,random_state=42)
 
 
 from sklearn.model_selection import GridSearchCV
@@ -118,7 +119,14 @@ def find_best_model(X,y):
             'params': {
                 'criterion': ['squared_error','friedman_mse'],
                 'splitter': ['best','random']
-,            }
+            }
+        },
+        'Random Forest Regressor': {
+            'model': RandomForestRegressor(),
+            'params': {
+                'min_samples_split': [2,5],
+                'criterion': ['squared_error','friedman_mse']           
+            }
         }
     }
 
@@ -135,7 +143,7 @@ def find_best_model(X,y):
 
     return pd.DataFrame(scores,columns=['model','best_score','best_params'])
 
-find_best_model(X,y)
+print(find_best_model(X,y))
 
 def predict_price(location, sqft, bath, bhk):
 
@@ -152,5 +160,15 @@ def predict_price(location, sqft, bath, bhk):
 
     return lr.predict(x)[0]
 
-
 print(predict_price('Indira Nagar',1000,3,3))
+
+import pickle
+with open('bangalore_home_prices_model.pickle', 'wb') as f:
+    pickle.dump(lr,f)
+
+import json
+columns = {
+    'data_columns': [col.lower() for col in X.columns]
+}
+with open("columns.json",'w') as f:
+    f.write(json.dumps(columns))
