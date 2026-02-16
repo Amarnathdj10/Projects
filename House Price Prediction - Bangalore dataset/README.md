@@ -8,15 +8,10 @@ This project demonstrates the complete ML lifecycle including data preprocessing
 
 ## Live Demo
 
-Demo Video: 
+Demo Video: https://www.linkedin.com/posts/amarnath-dj-b710abc_finally-completed-this-project-after-a-lot-activity-7429045495261679616-g9s6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFdDVc4Bg7XbtNr8Vx7pfyagOIpZ0WhXsXs
 
 ---
 
-## Screenshots
-
-(Add screenshots of your app here later)
-
----
 
 ## Features
 
