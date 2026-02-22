@@ -90,7 +90,7 @@ Forward,28/09/17,Lionel Messi,Barcelona,Sporting,N/A,0,90,7.2
 Forward,01/10/17,Lionel Messi,Barcelona,Las Palmas,N/A,1,90,10
 Forward,06/10/17,Lionel Messi,Argentina,Peru,12,1,90,7.4
 Forward,11/10/17,Lionel Messi,Argentina,Ecuador,35,0,90,9.9
-Forward,15/10/17,Lionel Messi,Barcelona,Atl. Madrid,2,0,90,7.8
+Forward,15/10/17,Lionel Messi,Barcelona,Athletico Madrid,2,0,90,7.8
 Forward,19/10/17,Lionel Messi,Barcelona,Olympiacos,29,1,90,8.6
 Forward,22/10/17,Lionel Messi,Barcelona,Malaga,N/A,1,90,7.8
 Forward,29/10/17,Lionel Messi,Barcelona,Athletic Club,34,0,90,8.0
@@ -106,7 +106,13 @@ Forward,11/12/17,Lionel Messi,Barcelona,Villareal,32,0,90,9.1
 Forward,18/12/17,Lionel Messi,Barcelona,Deportivo,N/A,1,90,7.5
 Forward,23/12/17,Lionel Messi,Barcelona,Real Madrid,1,0,90,10
 Forward,07/01/18,Lionel Messi,Barcelona,Levante,N/A,1,90,9.5
-Defender,09/08/17,Sergio Ramos,Real Madrid,Man Utd,12,1,90,7.0
+Forward,12/01/18,Lionel Messi,Barcelona,Celta,71,1,59,9.9
+Forward,15/01/18,Lionel Messi,Barcelona,Real Sociedad,70,0,90,8.9
+Forward,18/01/18,Lionel Messi,Barcelona,Espanyol,N/A,0,90,7.7
+Forward,22/01/18,Lionel Messi,Barcelona,Real Betis,72,0,90,10
+Forward,26/01/18,Lionel Messi,Barcelona,Espanyol,N/A,1,90,8.6
+Forward,29/01/18,Lionel Messi,Barcelona,Alaves,N/A,1,90,8.9
+Defender,09/08/17,Sergio Ramos,Real Madrid,Manchester United,12,1,90,7.0
 Defender,14/08/17,Sergio Ramos,Real Madrid,Barcelona,4,0,90,7.1
 Defender,17/08/17,Sergio Ramos,Real Madrid,Barcelona,4,1,90,7.4
 Defender,21/08/17,Sergio Ramos,Real Madrid,Deportivo,N/A,1,90,7.3
@@ -129,8 +135,69 @@ Defender,02/11/17,Sergio Ramos,Real Madrid,Tottenham,19,0,90,6.5
 Defender,06/11/17,Sergio Ramos,Real Madrid,Las Palmas,N/A,1,90,8.2
 Defender,12/11/17,Sergio Ramos,Spain,Costa Rica,26,1,46,N/A
 Defender,15/11/17,Sergio Ramos,Spain,Russia,65,0,58,N/A
-Defender,19/11/17,Sergio Ramos,Real Madrid,Atl. Madrid,2,0,45,6.8
+Defender,19/11/17,Sergio Ramos,Real Madrid,Athletico Madrid,2,0,45,6.8
 Defender,03/12/17,Sergio Ramos,Real Madrid,Athletic Club,34,0,90,7.6
 Defender,07/12/17,Sergio Ramos,Real Madrid,Dortmund,10,1,90,6.7
 Defender,16/12/17,Sergio Ramos,Real Madrid,Gremio,N/A,1,90,N/A
 Defender,23/12/17,Sergio Ramos,Real Madrid,Barcelona,4,1,90,6.1
+Midfielder,06/08/17,N'golo Kante,Chelsea,Arsenal,9,0,90,7.1
+Midfielder,12/08/17,N'golo Kante,Chelsea,Burnley,N/A,1,90,7.0
+Midfielder,20/08/17,N'golo Kante,Chelsea,Tottenham,19,0,90,7.5
+Midfielder,27/08/17,N'golo Kante,Chelsea,Everton,80,1,90,7.3
+Midfielder,01/09/17,N'golo Kante,France,Netherlands,36,1,90,7.8
+Midfielder,04/09/17,N'golo Kante,France,Luxemborg,137,1,90,7.7
+Midfielder,09/09/17,N'golo Kante,Chelsea,Leicester,66,0,90,7.9
+Midfielder,13/09/17,N'golo Kante,Chelsea,Qarabag,73,1,63,6.7
+Midfielder,17/09/17,N'golo Kante,Chelsea,Arsenal,9,1,90,7.5
+Midfielder,23/09/17,N'golo Kante,Chelsea,Stoke,N/A,0,90,7.3
+Midfielder,28/09/17,N'golo Kante,Chelsea,Athletico Madrid,2,1,90,7.4
+Midfielder,30/09/17,N'golo Kante,Chelsea,Manchester City,8,1,90,7.3
+Midfielder,08/10/17,N'golo Kante,France,Bulgaria,38,0,34,6.8
+Midfielder,05/11/17,N'golo Kante,Chelsea,Manchester United,12,1,90,7.3
+Midfielder,18/11/17,N'golo Kante,Chelsea,West Brom,N/A,0,77,7.2
+Midfielder,22/11/17,N'golo Kante,Chelsea,Qarabag,73,0,75,7.1
+Midfielder,25/11/17,N'golo Kante,Chelsea,Liverpool,22,0,90,7.2
+Midfielder,30/11/17,N'golo Kante,Chelsea,Swansea,N/A,1,90,7.1
+Midfielder,02/12/17,N'golo Kante,Chelsea,Newcastle,N/A,1,90,7.5
+Midfielder,06/12/17,N'golo Kante,Chelsea,Athletico Madrid,2,1,90,7.6
+Midfielder,09/12/17,N'golo Kante,Chelsea,West Ham,87,0,90,7.6
+Midfielder,13/12/17,N'golo Kante,Chelsea,Huddersfield,N/A,0,71,6.4
+Midfielder,16/12/17,N'golo Kante,Chelsea,Southampton,86,1,90,7.2
+Midfielder,23/12/17,N'golo Kante,Chelsea,Everton,80,0,90,7.6
+Midfielder,26/12/17,N'golo Kante,Chelsea,Brighton,N/A,1,85,7.7
+Midfielder,30/12/17,N'golo Kante,Chelsea,Stoke,N/A,1,65,6.9
+Midfielder,04/01/18,N'golo Kante,Chelsea,Arsenal,9,0,90,7.4
+Midfielder,11/01/18,N'golo Kante,Chelsea,Arsenal,9,1,90,7.2
+Midfielder,13/01/18,N'golo Kante,Chelsea,Leicester,66,1,90,6.6
+Midfielder,18/01/18,N'golo Kante,Chelsea,Norwich,N/A,1,34,6.7
+Midfielder,20/01/18,N'golo Kante,Chelsea,Brighton,N/A,0,90,6.8
+Midfielder,25/01/18,N'golo Kante,Chelsea,Newcastle,N/A,1,78,7.3
+Midfielder,01/02/18,N'golo Kante,Chelsea,Bournemouth,N/A,1,90,7.0
+Midfielder,06/02/18,N'golo Kante,Chelsea,Watford,N/A,0,90,6.6
+Midfielder,13/02/18,N'golo Kante,Chelsea,West Brom,N/A,1,90,6.6
+Midfielder,21/02/18,N'golo Kante,Chelsea,Barcelona,4,1,90,6.7
+Midfielder,25/02/18,N'golo Kante,Chelsea,Manchester United,12,0,90,7.0
+Midfielder,10/03/18,N'golo Kante,Chelsea,Crystal Palace,N/A,1,90,7.5
+Midfielder,15/03/18,N'golo Kante,Chelsea,Barcelona,4,0,90,7.7
+Midfielder,18/03/18,N'golo Kante,Chelsea,Leicester,66,0,120,7.9
+Midfielder,24/03/18,N'golo Kante,France,Colombia,,1,90,N/A
+Midfielder,27/03/18,N'golo Kante,France,Russia,63,0,66,N/A
+Midfielder,01/04/18,N'golo Kante,Chelsea,Tottenham,19,1,90,6.9
+Midfielder,08/04/18,N'golo Kante,Chelsea,West Ham,87,1,90,7.3
+Midfielder,14/04/18,N'golo Kante,Chelsea,Southampton,86,0,90,6.4
+Midfielder,20/04/18,N'golo Kante,Chelsea,Burnley,N/A,0,90,7.3
+Midfielder,22/04/18,N'golo Kante,Chelsea,Southampton,86,1,90,7.2
+Midfielder,28/04/18,N'golo Kante,Chelsea,Swansea,N/A,0,90,7.4
+Midfielder,06/05/18,N'golo Kante,Chelsea,Liverpool,22,1,90,7.1
+Midfielder,10/05/18,N'golo Kante,Chelsea,Huddersfield,N/A,1,90,6.9
+Midfielder,13/05/18,N'golo Kante,Chelsea,Newcastle,N/A,0,90,7.0
+Midfielder,19/05/18,N'golo Kante,Chelsea,Manchester United,12,1,90,7.7
+Midfielder,02/06/18,N'golo Kante,France,Italy,20,1,90,N/A
+Midfielder,10/06/18,N'golo Kante,France,USA,25,1,90,N/A
+Midfielder,16/06/18,N'golo Kante,France,Australia,36,1,90,7.4
+Midfielder,21/06/18,N'golo Kante,France,Peru,11,1,90,7.4
+Midfielder,26/06/18,N'golo Kante,France,Denmark,12,0,90,6.8
+Midfielder,30/06/18,N'golo Kante,France,Argentina,5,1,90,7.1
+Midfielder,06/07/18,N'golo Kante,France,Uruguay,14,0,90,6.9
+Midfielder,10/07/18,N'golo Kante,France,Belgium,5,1,90,6.8
+Midfielder,15/07/18,N'golo Kante,France,Croatia,12,1,55,5.8
