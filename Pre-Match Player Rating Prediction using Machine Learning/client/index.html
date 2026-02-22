@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elite Player Rating Predictor</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="main-container">
+
+    <h1 class="title">Player Rating Predictor</h1>
+
+    <div class="card">
+
+        <select id="playerSelect" onchange="changeTheme()">
+            <option value="">Select Player</option>
+            <option value="messi">Lionel Messi</option>
+            <option value="neymar">Neymar Jr</option>
+            <option value="kante">N'Golo Kanté</option>
+            <option value="ramos">Sergio Ramos</option>
+        </select>
+
+        <button class="fixture-btn" onclick="predictFixture()">
+            Upcoming Fixture
+        </button>
+
+        <div id="predictionResult" class="prediction-box"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
