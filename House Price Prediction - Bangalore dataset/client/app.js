@@ -27,7 +27,7 @@ function onClickedEstimatePrice() {
   var location = document.getElementById("uiLocations");
   var estPrice = document.getElementById("uiEstimatedPrice");
 
-  var url = "https://projects-opkj.onrender.com/predict_home_price"//Use this if you are NOT using nginx which is first 7 tutorials
+  var url = "https://projects-opkj.onrender.com/predict_home_price";//Use this if you are NOT using nginx which is first 7 tutorials
   //var url = "/api/predict_home_price"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
 
   $.post(url, {
