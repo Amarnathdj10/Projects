@@ -8,7 +8,7 @@ This project demonstrates the complete ML lifecycle including data preprocessing
 ## Live Demo
 
 Frontend: https://bangalore-house-price-prediction-dj.netlify.app 
-Backend API: https://your-render-link.onrender.com
+Backend API: https://projects-opkj.onrender.com
 
 ---
 
