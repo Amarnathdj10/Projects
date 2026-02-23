@@ -1,0 +1,7 @@
+dataset/
+Football Player Image Classification/
+*.jpg
+*.png
+__pycache__/
+*.pyc
+.venv/
