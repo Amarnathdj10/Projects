@@ -1,19 +1,19 @@
 const themes = {
     messi: {
         gradient: "linear-gradient(135deg, #004d98, #a50044)",
-        image: "client/images/messi.png"
+        image: "./images/messi.png"
     },
     neymar: {
         gradient: "linear-gradient(135deg, #002654, #ffcc00)",
-        image: "client/images/neymar.png"
+        image: "./images/neymar.png"
     },
     kante: {
         gradient: "linear-gradient(135deg, #034694, #ffffff)",
-        image: "client/images/kante.png"
+        image: "./images/kante.png"
     },
     ramos: {
         gradient: "linear-gradient(135deg, #8b0000, #ffffff)",
-        image: "client/images/ramos.png"
+        image: "./images/ramos.png"
     }
 };
 
@@ -31,8 +31,12 @@ function changeTheme() {
 
     body.style.background = themes[player].gradient;
 
-    overlay.style.backgroundImage = `url(${themes[player].image})`;
-    overlay.style.opacity = "0.25";
+    overlay.style.backgroundImage = `url(${themes[player].image})`;;
+    overlay.style.opacity = "0";
+    setTimeout(() => {
+        overlay.style.backgroundImage = `url(${themes[player].image})`;
+        overlay.style.opacity = "1";
+    }, 300);
 }
 
 function predictFixture() {

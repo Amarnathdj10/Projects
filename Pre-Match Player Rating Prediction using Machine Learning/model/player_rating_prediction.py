@@ -10,6 +10,8 @@ df.columns = df.columns.str.strip()
 for col in df.select_dtypes(include=[object]).columns:
     df[col] = df[col].str.strip()
 
+print(df['Player'].value_counts())
+'''
 #Convert date to datetime format and sort by date and player    
 df["Date"] = pd.to_datetime(df["Date"], dayfirst=True, errors="coerce",format="%d/%m/%y")
 df = df.sort_values(by=['Date'])
@@ -70,3 +72,4 @@ y_pred = xg.predict(X_test)
 
 mae = mean_absolute_error(y_test, y_pred)
 print(f'Mean Absolute Error: {mae}')
+'''
