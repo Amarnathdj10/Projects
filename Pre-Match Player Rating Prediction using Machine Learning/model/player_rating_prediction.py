@@ -11,7 +11,7 @@ for col in df.select_dtypes(include=[object]).columns:
     df[col] = df[col].str.strip()
 
 print(df['Player'].value_counts())
-'''
+
 #Convert date to datetime format and sort by date and player    
 df["Date"] = pd.to_datetime(df["Date"], dayfirst=True, errors="coerce",format="%d/%m/%y")
 df = df.sort_values(by=['Date'])
@@ -66,10 +66,9 @@ split_index = int(0.8 * len(df))
 X_train, X_test = X.iloc[:split_index], X.iloc[split_index:]
 y_train, y_test = y.iloc[:split_index], y.iloc[split_index:]
 
-xg = XGBRegressor(n_estimators=200, learning_rate=0.01, max_depth=3, random_state=42)
+xg = XGBRegressor(n_estimators=300, learning_rate=0.01, max_depth=5, random_state=42)
 xg.fit(X_train, y_train)
 y_pred = xg.predict(X_test)
 
 mae = mean_absolute_error(y_test, y_pred)
 print(f'Mean Absolute Error: {mae}')
-'''
