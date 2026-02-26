@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player Rating Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="bg-layer" id="bgLayer"></div>
+
+<div class="main-container">
+    <div class="left-panel">
+        <h1 class="app-title">Player Rating Predictor</h1>
+
+        <div class="card">
+            <label>Select Player</label>
+            <select id="playerSelect" onchange="applyTheme()">
+                <option value="">Select Player</option>
+                <option value="Neymar">Neymar</option>
+                <option value="N'golo Kante">N'golo Kante</option>
+                <option value="Sergio Ramos">Sergio Ramos</option>
+            </select>
+
+            <button onclick="loadFixture()" class="primary-btn">
+                Upcoming Fixture
+            </button>
+
+            <div id="fixtureBox" class="info-box hidden"></div>
+
+            <button onclick="predictRating()" id="predictBtn"
+                class="secondary-btn hidden">
+                Predict Rating
+            </button>
+
+            <div id="resultBox" class="result-box"></div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

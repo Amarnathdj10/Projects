@@ -1,8 +1,10 @@
 import pandas as pd
 import numpy as np
+import joblib
 from xgboost import XGBRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
+import matplotlib.pyplot as plt
 
 df = pd.read_csv('ratings.csv')
 
@@ -14,7 +16,7 @@ print(df['Player'].value_counts())
 
 #Convert date to datetime format and sort by date and player    
 df["Date"] = pd.to_datetime(df["Date"], dayfirst=True, errors="coerce",format="%d/%m/%y")
-df = df.sort_values(by=['Date'])
+df = df.sort_values(by=['Player','Date'])
 
 # Convert 'Rating' and 'OpponentRank' to numeric, handle errors, and create new features
 df["Rating"] = pd.to_numeric(df["Rating"], errors="coerce")
@@ -57,18 +59,21 @@ df['PlayerBaseline'] = df['PlayerBaseline'].fillna(df['PlayerBaseline'].median()
 #One-hot encode the 'Position' column, dropping the first category to avoid multicollinearity
 df = pd.get_dummies(df, columns=["Position"], drop_first=True)
 
-print(df.head())
-
 X = df.drop(columns=["Player", "Date", "Rating", "Team", "Opponent", "OpponentRank"],axis=1)
+feature_columns = X.columns
+joblib.dump(feature_columns, "feature_columns.pkl")
 y = df.Rating
 
 split_index = int(0.8 * len(df))
 X_train, X_test = X.iloc[:split_index], X.iloc[split_index:]
 y_train, y_test = y.iloc[:split_index], y.iloc[split_index:]
 
-xg = XGBRegressor(n_estimators=300, learning_rate=0.01, max_depth=5, random_state=42)
+xg = XGBRegressor(n_estimators=250, learning_rate=0.01, max_depth=3, random_state=42)
 xg.fit(X_train, y_train)
-y_pred = xg.predict(X_test)
+y_pred_xg = xg.predict(X_test)
 
-mae = mean_absolute_error(y_test, y_pred)
-print(f'Mean Absolute Error: {mae}')
+mae_xg = mean_absolute_error(y_test, y_pred_xg)
+
+print(f'Mean Absolute Error for XGBoost: {mae_xg}')
+
+joblib.dump(xg,"model.pickle")

@@ -77,46 +77,11 @@ Forward,30/04/19,Neymar,Paris Saint-Germain,Montpellier,N/A,0,90,6.8
 Forward,04/05/19,Neymar,Paris Saint-Germain,Nice,113,1,90,8.2
 Forward,11/05/19,Neymar,Paris Saint-Germain,Angers,N/A,0,89,8.4
 Forward,06/06/19,Neymar,Brazil,Qatar,55,1,21,N/A
-Forward,14/08/17,Lionel Messi,Barcelona,Real Madrid,1,0,90,7.9
-Forward,17/08/17,Lionel Messi,Barcelona,Real Madrid,1,0,90,6.7
-Forward,20/08/17,Lionel Messi,Barcelona,Real Betis,72,1,90,8.2
-Forward,24/08/17,Lionel Messi,Barcelona,Alaves,N/A,0,90,9.4
-Forward,01/09/17,Lionel Messi,Argentina,Uruguay,17,0,90,7.7
-Forward,06/09/17,Lionel Messi,Argentina,Venezuela,69,1,90,8.3
-Forward,10/09/17,Lionel Messi,Barcelona,Getafe,N/A,0,90,7.8
-Forward,20/09/17,Lionel Messi,Barcelona,Eibar,N/A,1,90,10
-Forward,24/09/17,Lionel Messi,Barcelona,Girona,N/A,0,90,7.4
-Forward,28/09/17,Lionel Messi,Barcelona,Sporting,N/A,0,90,7.2
-Forward,01/10/17,Lionel Messi,Barcelona,Las Palmas,N/A,1,90,10
-Forward,06/10/17,Lionel Messi,Argentina,Peru,12,1,90,7.4
-Forward,11/10/17,Lionel Messi,Argentina,Ecuador,35,0,90,9.9
-Forward,15/10/17,Lionel Messi,Barcelona,Athletico Madrid,2,0,90,7.8
-Forward,19/10/17,Lionel Messi,Barcelona,Olympiacos,29,1,90,8.6
-Forward,22/10/17,Lionel Messi,Barcelona,Malaga,N/A,1,90,7.8
-Forward,29/10/17,Lionel Messi,Barcelona,Athletic Club,34,0,90,8.0
-Forward,01/11/17,Lionel Messi,Barcelona,Olympiacos,29,0,90,8.0
-Forward,05/11/17,Lionel Messi,Barcelona,Sevilla,6,1,90,7.8
-Forward,11/11/17,Lionel Messi,Argentina,Russia,65,0,90,N/A
-Forward,18/11/17,Lionel Messi,Barcelona,Leganes,N/A,0,90,6.9
-Forward,23/11/17,Lionel Messi,Barcelona,Juventus,5,0,34,6.7
-Forward,27/11/17,Lionel Messi,Barcelona,Valencia,41,0,90,8.0
-Forward,02/12/17,Lionel Messi,Barcelona,Celta,71,1,90,8.3
-Forward,06/12/17,Lionel Messi,Barcelona,Sporting,37,1,29,7.1
-Forward,11/12/17,Lionel Messi,Barcelona,Villareal,32,0,90,9.1
-Forward,18/12/17,Lionel Messi,Barcelona,Deportivo,N/A,1,90,7.5
-Forward,23/12/17,Lionel Messi,Barcelona,Real Madrid,1,0,90,10
-Forward,07/01/18,Lionel Messi,Barcelona,Levante,N/A,1,90,9.5
-Forward,12/01/18,Lionel Messi,Barcelona,Celta,71,1,59,9.9
-Forward,15/01/18,Lionel Messi,Barcelona,Real Sociedad,70,0,90,8.9
-Forward,18/01/18,Lionel Messi,Barcelona,Espanyol,N/A,0,90,7.7
-Forward,22/01/18,Lionel Messi,Barcelona,Real Betis,72,0,90,10
-Forward,26/01/18,Lionel Messi,Barcelona,Espanyol,N/A,1,90,8.6
-Forward,29/01/18,Lionel Messi,Barcelona,Alaves,N/A,1,90,8.9
 Defender,09/08/17,Sergio Ramos,Real Madrid,Manchester United,12,1,90,7.0
 Defender,14/08/17,Sergio Ramos,Real Madrid,Barcelona,4,0,90,7.1
 Defender,17/08/17,Sergio Ramos,Real Madrid,Barcelona,4,1,90,7.4
 Defender,21/08/17,Sergio Ramos,Real Madrid,Deportivo,N/A,1,90,7.3
-Defender,03/09/17,Sergio Ramos,Spain,Italy,17,1,90,7.
+Defender,03/09/17,Sergio Ramos,Spain,Italy,17,1,90,7.0
 Defender,06/09/17,Sergio Ramos,Spain,Liechtenstein,187,0,90,7.8
 Defender,09/09/17,Sergio Ramos,Real Madrid,Levante,N/A,1,90,7.7
 Defender,14/09/17,Sergio Ramos,Real Madrid,APOEL,55,1,90,8.1
@@ -249,8 +214,34 @@ Midfielder,04/11/18,N'golo Kante,Chelsea,Crystal Palace,N/A,1,90,6.6
 Midfielder,11/11/18,N'golo Kante,Chelsea,Everton,84,0,90,7.0
 Midfielder,17/11/18,N'golo Kante,France,Netherlands,15,0,90,N/A
 Midfielder,21/11/18,N'golo Kante,France,Uruguay,6,1,90,N/A
-
-
-
-
-
+Forward,07/09/19,Neymar,Brazil,Colombia,14,1,90,N/A
+Forward,11/09/19,Neymar,Brazil,Peru,20,1,27,N/A
+Forward,14/09/19,Neymar,Paris Saint-Germain,Strasbourg,118,1,90,7.8
+Forward,23/09/19,Neymar,Paris Saint-Germain,Lyon,15,0,89,8.5
+Defender,16/08/18,Sergio Ramos,Real Madrid,Athletico Madrid,4,1,120,6.5
+Defender,20/08/18,Sergio Ramos,Real Madrid,Getafe,N/A,0,90,7.5
+Defender,27/08/18,Sergio Ramos,Real Madrid,Girona,N/A,0,90,7.4
+Defender,02/09/18,Sergio Ramos,Real Madrid,Leganes,N/A,1,90,8.1
+Defender,09/09/18,Sergio Ramos,Spain,England,6,0,90,N/A
+Defender,12/09/18,Sergio Ramos,Spain,Croatia,4,1,90,N/A
+Defender,16/09/18,Sergio Ramos,Real Madrid,Athletic Club,34,0,90,7.8
+Defender,20/09/18,Sergio Ramos,Real Madrid,Roma,14,1,90,7.3
+Defender,23/09/18,Sergio Ramos,Real Madrid,Espanyol,N/A,1,90,8.2
+Defender,23/09/18,Sergio Ramos,Real Madrid,Girona,N/A,0,90,7.4
+Defender,27/09/18,Sergio Ramos,Real Madrid,Sevilla,7,0,90,6.9
+Defender,30/09/18,Sergio Ramos,Real Madrid,Athletico Madrid,4,1,90,7.6
+Defender,06/10/18,Sergio Ramos,Real Madrid,Alaves,N/A,0,90,7.6
+Defender,12/10/18,Sergio Ramos,Spain,Wales,19,1,45,N/A
+Defender,16/10/18,Sergio Ramos,Spain,England,6,1,90,N/A
+Defender,20/10/18,Sergio Ramos,Real Madrid,Levante,N/A,1,90,6.5
+Defender,24/10/18,Sergio Ramos,Real Madrid,Viktoria Plzen,44,1,90,7.7
+Defender,28/10/18,Sergio Ramos,Real Madrid,Barcelona,2,0,90,6.2
+Defender,01/11/18,Sergio Ramos,Real Madrid,Melilla,N/A,0,45,6.6
+Defender,03/11/18,Sergio Ramos,Real Madrid,Real Valladolid,N/A,1,45,6.6
+Defender,08/11/18,Sergio Ramos,Real Madrid,Viktoria Plzen,44,0,59,6.9
+Defender,12/11/18,Sergio Ramos,Real Madrid,Celta,76,0,90,8.5
+Defender,16/11/18,Sergio Ramos,Spain,Croatia,4,0,90,N/A
+Defender,24/11/18,Sergio Ramos,Real Madrid,Eibar,N/A,0,90,6.7
+Defender,28/11/18,Sergio Ramos,Real Madrid,Roma,14,0,90,7.6
+Defender,02/12/18,Sergio Ramos,Real Madrid,Valencia,39,1,90,7.5
+Defender,09/12/18,Sergio Ramos,Real Madrid,Huesca,N/A,0,90,7.6

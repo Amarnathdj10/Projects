@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b0c10;
+    color: white;
+    overflow: hidden;
+}
+
+.bg-layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("images/iconic.jpg"); /* change filename */
+    background-size: cover;        /* fills entire screen */
+    background-position: center;   /* keeps image centered */
+    background-repeat: no-repeat;
+
+    opacity: 0.4;                  /* adjust brightness */
+    z-index: -1;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+}
+
+.left-panel {
+    max-width: 420px;
+}
+
+.app-title {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    margin-top: 8px;
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: rgba(20,20,20,0.8);
+    backdrop-filter: blur(14px);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.7);
+}
+
+label {
+    font-size: 13px;
+    color: #aaa;
+}
+
+select {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+}
+
+.primary-btn,
+.secondary-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background: #1f80e0;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #1667b8;
+}
+
+.secondary-btn {
+    margin-top: 15px;
+    background: #14c38e;
+    color: black;
+}
+
+.secondary-btn:hover {
+    background: #10a474;
+}
+
+.info-box {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.result-box {
+    margin-top: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hidden {
+    display: none;
+}
