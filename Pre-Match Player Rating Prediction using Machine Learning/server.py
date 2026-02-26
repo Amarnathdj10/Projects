@@ -2,8 +2,10 @@ from flask import Flask, request, jsonify, render_template
 import pandas as pd
 import joblib
 import numpy as np
+from flask_cors import CORS
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
+CORS(app)
 
 # ---------------------------
 # LOAD MODEL + DATA
