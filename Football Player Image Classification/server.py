@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load model
-with open("model.pkl", "rb") as f:
+with open("model.pickle", "rb") as f:
     model = pickle.load(f)
 
 class_names = ["Messi", "Ronaldo", "Neymar", "Mbappe", "Haaland"]
