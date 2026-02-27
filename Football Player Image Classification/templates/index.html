@@ -7,17 +7,20 @@
 </head>
 <body>
 
-<div class="background"></div>
-
 <div class="card">
     <h1>Elite Player Recognition</h1>
-    <div class="upload-section">
+    <p class="subheading">AI-Powered Football Identity Classification</p>
+
+    <div class="drop-zone" id="dropZone">
+        <p>Drag & Drop Image Here</p>
+        <span>or click to browse</span>
         <input type="file" id="imageInput" hidden>
-        <label for="imageInput" class="upload-btn">Choose Image</label>
-        <button onclick="uploadImage()" class="predict-btn">Predict</button>
     </div>
 
+    <button onclick="uploadImage()" class="predict-btn">Predict</button>
+
     <div class="preview-container">
+        <img id="preview">
     </div>
 
     <div id="result" class="result-box"></div>
