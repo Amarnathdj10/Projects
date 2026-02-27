@@ -6,6 +6,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import shutil
 import pywt
+import joblib
+import json
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
@@ -153,3 +155,10 @@ print("Random Forest Test Score:", best_estimators['random_forest'].score(X_test
 print("Logistic Regression Test Score:", best_estimators['logistic_regression'].score(X_test, y_test))
 
 print(confusion_matrix(y_test, best_estimators['logistic_regression'].predict(X_test)))
+
+best_clf = best_estimators['logistic_regression']
+
+joblib.dump(best_clf, "model.pickle")
+
+with open("class_dictionary.jso","w") as f:
+    f.write(json.dumps(class_dict))

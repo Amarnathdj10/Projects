@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Football Player Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Football Player Classifier</h1>
+    <p class="subheading">Upload an image to predict the player</p>
+
+    <input type="file" id="imageInput">
+    <button onclick="uploadImage()">Predict</button>
+
+    <p id="result"></p>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
