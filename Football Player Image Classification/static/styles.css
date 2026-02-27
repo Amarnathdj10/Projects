@@ -1,38 +1,83 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f2f2f2;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 50px;
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
     text-align: center;
 }
 
-.container {
-    margin-top: 100px;
-    background: white;
-    padding: 40px;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    letter-spacing: 1px;
 }
 
 .subheading {
-    color: gray;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+.upload-section {
     margin-bottom: 20px;
 }
 
-button {
-    padding: 8px 20px;
-    background: black;
-    color: white;
+.upload-btn, .predict-btn {
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 30px;
     border: none;
     cursor: pointer;
-}
-
-button:hover {
-    background: #333;
-}
-
-#result {
-    margin-top: 20px;
     font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.upload-btn {
+    background: #222;
+    color: #f5c542;
+    border: 1px solid #f5c542;
+}
+
+.upload-btn:hover {
+    background: #f5c542;
+    color: black;
+}
+
+.predict-btn {
+    background: #f5c542;
+    color: black;
+}
+
+.predict-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #f5c542;
+}
+
+.preview-container {
+    margin-top: 20px;
+}
+
+#preview {
+    max-width: 200px;
+    border-radius: 10px;
+    display: none;
+}
+
+.result-box {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f5c542;
 }
