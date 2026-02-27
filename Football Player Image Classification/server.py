@@ -9,8 +9,12 @@ from flask import Flask, request, jsonify, render_template
 app = Flask(__name__,template_folder="templates",
             static_folder="static")
 
-# Load model
-model = joblib.load("model.pickle")
+model = None
+
+def load_model():
+    global model
+    if model is None:
+        model = joblib.load("model.pickle")
 
 # Load class dictionary
 with open("class_dictionary.json", "r") as f:
@@ -78,6 +82,7 @@ def predict():
     if processed is None:
         return jsonify({"error": "No face detected"})
 
+    load_model()
     prediction = model.predict(processed)[0]
 
     return jsonify({
