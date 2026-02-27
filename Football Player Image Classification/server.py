@@ -12,7 +12,7 @@ app = Flask(__name__)
 model = joblib.load("model.pickle")
 
 # Load class dictionary
-with open("class_dictionary.jso", "r") as f:
+with open("class_dictionary.json", "r") as f:
     class_dict = json.load(f)
 
 class_dict_inv = {v: k for k, v in class_dict.items()}
