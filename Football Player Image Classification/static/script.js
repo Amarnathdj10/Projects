@@ -8,10 +8,19 @@ function uploadImage() {
         return;
     }
 
+    // Show preview
+    let reader = new FileReader();
+    reader.onload = function(e) {
+        let preview = document.getElementById("preview");
+        preview.src = e.target.result;
+        preview.style.display = "block";
+    };
+    reader.readAsDataURL(file);
+
     let formData = new FormData();
     formData.append("image", file);
 
-    document.getElementById("result").innerText = "Predicting...";
+    document.getElementById("result").innerText = "Analyzing...";
 
     fetch("/predict", {
         method: "POST",
@@ -19,11 +28,15 @@ function uploadImage() {
     })
     .then(response => response.json())
     .then(data => {
-        document.getElementById("result").innerText =
-            "Prediction: " + data.prediction;
+        if (data.error) {
+            document.getElementById("result").innerText = data.error;
+        } else {
+            document.getElementById("result").innerText =
+                "Prediction: " + data.prediction;
+        }
     })
-    .catch(error => {
+    .catch(() => {
         document.getElementById("result").innerText =
-            "Error occurred. Try again.";
+            "Something went wrong.";
     });
 }

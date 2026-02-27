@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Football Player Classifier</title>
+    <title>Elite Player Recognition AI</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<div class="container">
-    <h1>Football Player Classifier</h1>
-    <p class="subheading">Upload an image to predict the player</p>
+<div class="background"></div>
 
-    <input type="file" id="imageInput">
-    <button onclick="uploadImage()">Predict</button>
+<div class="card">
+    <h1>Elite Player Recognition</h1>
+    <p class="subheading">AI-Powered Football Identity Classification</p>
 
-    <p id="result"></p>
+    <div class="upload-section">
+        <input type="file" id="imageInput" hidden>
+        <label for="imageInput" class="upload-btn">Choose Image</label>
+        <button onclick="uploadImage()" class="predict-btn">Predict</button>
+    </div>
+
+    <div class="preview-container">
+        <img id="preview">
+    </div>
+
+    <div id="result" class="result-box"></div>
 </div>
 
 <script src="{{ url_for('static', filename='script.js') }}"></script>

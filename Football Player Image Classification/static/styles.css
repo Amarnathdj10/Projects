@@ -1,38 +1,98 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f2f2f2;
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    margin-top: 100px;
-    background: white;
-    padding: 40px;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top left, #1c1c1c, #0f0f0f);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.card {
+    width: 450px;
+    padding: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 .subheading {
-    color: gray;
-    margin-bottom: 20px;
+    color: #bbbbbb;
+    margin-bottom: 30px;
 }
 
-button {
-    padding: 8px 20px;
-    background: black;
-    color: white;
+.upload-section {
+    margin-bottom: 25px;
+}
+
+.upload-btn,
+.predict-btn {
+    padding: 10px 25px;
+    border-radius: 30px;
     border: none;
     cursor: pointer;
-}
-
-button:hover {
-    background: #333;
-}
-
-#result {
-    margin-top: 20px;
     font-weight: bold;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+
+.upload-btn {
+    background: transparent;
+    border: 1px solid #f5c542;
+    color: #f5c542;
+}
+
+.upload-btn:hover {
+    background: #f5c542;
+    color: black;
+}
+
+.predict-btn {
+    background: #f5c542;
+    color: black;
+}
+
+.predict-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #f5c542;
+}
+
+.preview-container {
+    margin-top: 20px;
+}
+
+#preview {
+    max-width: 220px;
+    border-radius: 12px;
+    display: none;
+    margin-top: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.result-box {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f5c542;
+    min-height: 30px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
 }
