@@ -6,7 +6,8 @@ import json
 import pywt
 from flask import Flask, request, jsonify, render_template
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder="templates",
+            static_folder="static")
 
 # Load model
 model = joblib.load("model.pickle")
