@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -28,10 +29,37 @@ body {
 h1 {
     font-size: 28px;
     margin-bottom: 10px;
+=======
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 50px;
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+>>>>>>> 9cb80afc8549fb3e6b21667673026f1804ff1a5b
     letter-spacing: 1px;
 }
 
 .subheading {
+<<<<<<< HEAD
     color: #bbbbbb;
     margin-bottom: 30px;
 }
@@ -43,18 +71,40 @@ h1 {
 .upload-btn,
 .predict-btn {
     padding: 10px 25px;
+=======
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+.upload-section {
+    margin-bottom: 20px;
+}
+
+.upload-btn, .predict-btn {
+    padding: 10px 25px;
+    margin: 5px;
+>>>>>>> 9cb80afc8549fb3e6b21667673026f1804ff1a5b
     border-radius: 30px;
     border: none;
     cursor: pointer;
     font-weight: bold;
+<<<<<<< HEAD
     margin: 5px;
+=======
+>>>>>>> 9cb80afc8549fb3e6b21667673026f1804ff1a5b
     transition: 0.3s ease;
 }
 
 .upload-btn {
+<<<<<<< HEAD
     background: transparent;
     border: 1px solid #f5c542;
     color: #f5c542;
+=======
+    background: #222;
+    color: #f5c542;
+    border: 1px solid #f5c542;
+>>>>>>> 9cb80afc8549fb3e6b21667673026f1804ff1a5b
 }
 
 .upload-btn:hover {
@@ -68,8 +118,13 @@ h1 {
 }
 
 .predict-btn:hover {
+<<<<<<< HEAD
     transform: scale(1.08);
     box-shadow: 0 0 20px #f5c542;
+=======
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #f5c542;
+>>>>>>> 9cb80afc8549fb3e6b21667673026f1804ff1a5b
 }
 
 .preview-container {
@@ -77,6 +132,7 @@ h1 {
 }
 
 #preview {
+<<<<<<< HEAD
     max-width: 220px;
     border-radius: 12px;
     display: none;
@@ -95,4 +151,16 @@ h1 {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(15px); }
     to { opacity: 1; transform: translateY(0); }
+=======
+    max-width: 200px;
+    border-radius: 10px;
+    display: none;
+}
+
+.result-box {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f5c542;
+>>>>>>> 9cb80afc8549fb3e6b21667673026f1804ff1a5b
 }
