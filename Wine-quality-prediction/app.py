@@ -82,30 +82,30 @@ st.markdown('<div class="subtitle">AI-powered wine analysis system</div>', unsaf
 # ---------------- INPUT CARD ----------------
 st.markdown('<div class="card">', unsafe_allow_html=True)
 
-col1, col2 = st.columns(2)
+with st.form('wine_form'):
+    col1, col2 = st.columns(2)
 
-with col1:
-    fixed_acidity = st.number_input("Fixed Acidity", 0.0, 20.0, 7.0)
-    volatile_acidity = st.number_input("Volatile Acidity", 0.0, 2.0, 0.5)
-    citric_acid = st.number_input("Citric Acid", 0.0, 1.0, 0.3)
-    residual_sugar = st.number_input("Residual Sugar", 0.0, 20.0, 2.0)
-    chlorides = st.number_input("Chlorides", 0.0, 1.0, 0.05)
-    free_sulfur = st.number_input("Free Sulfur Dioxide", 0.0, 100.0, 30.0)
+    with col1:
+        fixed_acidity = st.number_input("Fixed Acidity", 0.0, 20.0, 7.0)
+        volatile_acidity = st.number_input("Volatile Acidity", 0.0, 2.0, 0.5)
+        citric_acid = st.number_input("Citric Acid", 0.0, 1.0, 0.3)
+        residual_sugar = st.number_input("Residual Sugar", 0.0, 20.0, 2.0)
+        chlorides = st.number_input("Chlorides", 0.0, 1.0, 0.05)
+        free_sulfur = st.number_input("Free Sulfur Dioxide", 0.0, 100.0, 30.0)
 
-with col2:
-    total_sulfur = st.number_input("Total Sulfur Dioxide", 0.0, 300.0, 100.0)
-    density = st.number_input("Density", 0.9900, 1.0100, 0.9950)
-    pH = st.number_input("pH", 2.5, 4.5, 3.2)
-    sulphates = st.number_input("Sulphates", 0.0, 2.0, 0.5)
-    alcohol = st.number_input("Alcohol", 5.0, 20.0, 10.0)
-    wine_type = st.selectbox("Wine Type", ["Red", "White"])
+    with col2:
+        total_sulfur = st.number_input("Total Sulfur Dioxide", 0.0, 300.0, 100.0)
+        density = st.number_input("Density", 0.9900, 1.0100, 0.9950)
+        pH = st.number_input("pH", 2.5, 4.5, 3.2)
+        sulphates = st.number_input("Sulphates", 0.0, 2.0, 0.5)
+        alcohol = st.number_input("Alcohol", 5.0, 20.0, 10.0)
+        wine_type = st.selectbox("Wine Type", ["Red", "White"])
 
-wine_type = 0 if wine_type == "Red" else 1
-
-# ---------------- BUTTON ----------------
-predict_btn = st.button("Predict Quality 🍷")
+    predict_btn = st.form_submit_button("Predict Quality 🍷")
 
 st.markdown("</div>", unsafe_allow_html=True)
+
+wine_type = 0 if wine_type == "Red" else 1
 
 # ---------------- PREDICTION ----------------
 if predict_btn:
@@ -115,7 +115,10 @@ if predict_btn:
                             total_sulfur, density, pH, sulphates,
                             alcohol, wine_type]])
 
+    st.write("### Model input (raw)", input_data.tolist())
     input_scaled = scaler.transform(input_data)
+    st.write("### Model input (scaled)", input_scaled.tolist())
+
     prediction = model.predict(input_scaled)[0]
 
     labels = {0: "Bad ❌", 1: "Average ⚖️", 2: "Good ✅"}
