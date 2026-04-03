@@ -1,1 +1,1 @@
-Basic Visualization projects, live and deployed!
+📊Basic Visualization projects, live and deployed!
