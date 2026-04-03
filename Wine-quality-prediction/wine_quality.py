@@ -11,8 +11,8 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import joblib
 
 # Load datasets
-rdf = pd.read_csv(r'D:\Coding journey\Projects\Wine quality prediction\dataset\winequality-red.csv', sep=';')
-wdf = pd.read_csv(r'D:\Coding journey\Projects\Wine quality prediction\dataset\winequality-white.csv', sep=';')
+rdf = pd.read_csv(r'D:\Coding journey\Projects\Wine-quality-prediction\dataset\winequality-red.csv', sep=';')
+wdf = pd.read_csv(r'D:\Coding journey\Projects\Wine-quality-prediction\dataset\winequality-white.csv', sep=';')
 
 # Add wine type column
 rdf['type'] = 0   # red
