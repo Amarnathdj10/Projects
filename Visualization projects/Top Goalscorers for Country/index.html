@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golazo! — International Top Scorers</title>
+    <meta name="description"
+        content="Explore the all-time top international goalscorers for every major football nation. Beautiful charts, player profiles, and nation stats." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ── HEADER ─────────────────────────────────── -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="ball">⚽</span>
+                <div>
+                    <span class="logo-title">Golazo!</span>
+                    <span class="logo-sub">International Top Scorers</span>
+                </div>
+            </div>
+            <button class="back-btn" id="backBtn" style="display:none" onclick="showLanding()">
+                ← All Nations
+            </button>
+        </div>
+    </header>
+
+    <!-- ── LANDING ────────────────────────────────── -->
+    <main>
+        <section id="landing">
+            <div class="landing-hero">
+                <h1 class="landing-title">Who scored the most<br><span class="gradient-text">for their country?</span>
+                </h1>
+                <p class="landing-sub">Pick a nation below to explore its greatest ever goalscorers.</p>
+            </div>
+            <div class="nations-grid" id="nationsGrid"></div>
+        </section>
+
+        <!-- ── NATION DETAIL ───────────────────────── -->
+        <section id="nationView" style="display:none">
+            <div class="nation-hero" id="nationHero">
+                <div class="hero-fade"></div>
+                <div class="hero-content">
+                    <div class="hero-flag" id="heroFlag"></div>
+                    <div>
+                        <h2 class="hero-name" id="heroName"></h2>
+                        <p class="hero-sub" id="heroSub"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-wrap">
+                <p class="section-label">🏆 All-Time Top Scorers</p>
+                <div class="players-grid" id="playersGrid"></div>
+
+                <p class="section-label" style="margin-top:2.5rem">📊 Goals at a Glance</p>
+                <div class="chart-card">
+                    <canvas id="goalChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Data accurate as of 2024 &nbsp;·&nbsp; Built with Chart.js &amp; Wikipedia API &nbsp;·&nbsp; ⚽ Golazo!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
