@@ -1,10 +1,14 @@
 import streamlit as st
 import numpy as np
 import joblib
+import os
 
-# ---------------- LOAD MODEL ----------------
-model = joblib.load("best_model.pkl")
-scaler = joblib.load("scaler.pkl")
+# ---------------- LOAD MODEL ---------------
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+model = joblib.load(os.path.join(BASE_DIR, "best_model.pkl"))
+scaler = joblib.load(os.path.join(BASE_DIR, "scaler.pkl"))
 
 st.set_page_config(page_title="Wine Quality Predictor", layout="centered")
 
