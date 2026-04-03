@@ -95,7 +95,7 @@ with st.form('wine_form'):
 
     with col2:
         total_sulfur = st.number_input("Total Sulfur Dioxide", 0.0, 300.0, 100.0)
-        density = st.number_input("Density", 0.9900, 1.0100, 0.9950)
+        density = st.number_input("Density", 0.990, 1.010, 0.995, step=0.001, format="%.3f")
         pH = st.number_input("pH", 2.5, 4.5, 3.2)
         sulphates = st.number_input("Sulphates", 0.0, 2.0, 0.5)
         alcohol = st.number_input("Alcohol", 5.0, 20.0, 10.0)
@@ -115,10 +115,7 @@ if predict_btn:
                             total_sulfur, density, pH, sulphates,
                             alcohol, wine_type]])
 
-    st.write("### Model input (raw)", input_data.tolist())
     input_scaled = scaler.transform(input_data)
-    st.write("### Model input (scaled)", input_scaled.tolist())
-
     prediction = model.predict(input_scaled)[0]
 
     labels = {0: "Bad ❌", 1: "Average ⚖️", 2: "Good ✅"}
